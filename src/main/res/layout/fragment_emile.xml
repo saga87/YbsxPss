@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y20"
+                android:background="#ebeceb"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:gravity="right|center"
+                    android:text="邮箱:"
+                    android:textColor="#000000" />
+
+                <EditText
+                    android:id="@+id/et_emile_phone"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="@dimen/y10"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/x10"
+                    android:background="@drawable/edit"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="验证码:"
+                    android:gravity="right|center"
+                    android:layout_marginLeft="@dimen/x40"
+                    android:textColor="#000000"
+                    />
+                <EditText
+                    android:id="@+id/et_emile_yzm"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/y10"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edit"
+                    android:layout_margin="@dimen/x10"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_emile_yzm"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/y10"
+                    android:paddingRight="@dimen/y10"
+                    android:paddingTop="@dimen/y10"
+                    android:text="发送验证码"
+                    android:textColor="#359f01"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#cccccc"/>
+
+            <Button
+                android:id="@+id/btn_emile_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x80"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_color_selector"
+                android:text="下一步"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

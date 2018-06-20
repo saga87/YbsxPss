@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:background="#ececec"/>
+    <LinearLayout
+        android:background="@color/textcolor1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80">
+        <CheckBox
+            android:id="@+id/checkbox_item_daifahuo"
+            android:checked="false"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/checkbox_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="采货商"/>
+        <TextView
+            android:id="@+id/item_dfh_dfh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="待受理"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/x30"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+    <FrameLayout
+        android:background="@color/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.ning.ybsxpss.view.MyGridView
+            android:id="@+id/item_dfh_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x60"
+            android:layout_marginRight="@dimen/x60"
+            android:background="@color/textcolor1"
+            android:numColumns="3">
+        </com.ning.ybsxpss.view.MyGridView>
+        <TextView
+            android:id="@+id/item_dfh_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+    <LinearLayout
+        android:background="@color/textcolor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/y16"
+            android:layout_marginBottom="@dimen/y8"
+            android:layout_marginRight="@dimen/y30"
+            android:layout_marginLeft="@dimen/y30"
+            android:text="下单时间:"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/item_dfh_xdsj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/y16"
+            android:layout_marginBottom="@dimen/y8"
+            android:text="2016-02-20:"
+            android:textColor="#000000" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/background1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/y8"
+            android:layout_marginBottom="@dimen/y16"
+            android:layout_marginRight="@dimen/y30"
+            android:layout_marginLeft="@dimen/y30"
+            android:text="配送时间:"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/item_dfh_pssj"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y16"
+            android:layout_marginTop="@dimen/y8"
+            android:text="2016-02-20:"
+            android:textColor="#000000" />
+    </LinearLayout>
+</LinearLayout>

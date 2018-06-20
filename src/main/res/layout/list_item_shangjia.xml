@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/textcolor1"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:background="#ececec"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y250">
+
+        <ImageView
+            android:id="@+id/item_shangjia_image"
+            android:layout_width="@dimen/y230"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginLeft="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:scaleType="fitXY"
+            android:src="@drawable/timg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:layout_marginTop="@dimen/y30"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_shangjia_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0045"
+                android:textColor="#000000"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10">
+
+                <TextView
+                    android:id="@+id/item_shangjia_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="胡萝卜"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_shangjia_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x20"
+                    android:gravity="right"
+                    android:text="2元/斤"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y70">
+
+                <TextView
+                    android:id="@+id/item_shangjia_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上架"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_shangjia_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/x20"
+                    android:gravity="right"
+                    android:text="起订量：10"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y10"
+        android:layout_marginLeft="@dimen/x400">
+        <Button
+            android:id="@+id/item_shangjia_xiajia"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_color_selector"
+            android:layout_marginRight="@dimen/x20"
+            android:text="下架"
+            android:textSize="14sp"
+            android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/item_shangjia_xiugai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_color_selector"
+            android:layout_marginRight="@dimen/x20"
+            android:text="修改"
+            android:textSize="14sp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

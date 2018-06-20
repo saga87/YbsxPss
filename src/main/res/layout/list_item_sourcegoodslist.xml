@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/textcolor1"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100">
+        <CheckBox
+            android:id="@+id/item_sourcegoods_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/checkbox_style"
+            android:layout_marginLeft="@dimen/x10"
+            android:gravity="center"
+            android:paddingLeft="@dimen/x30"
+            android:textSize="14sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/item_sourcegoods_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="土豆"
+            android:gravity="left|center"
+            android:paddingLeft="@dimen/x30"
+            android:textSize="14sp"
+            android:textColor="#000000"/>
+        <ImageView
+            android:id="@+id/item_sourcegoods_dui"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/duihao"
+            android:paddingRight="@dimen/x30"
+            android:paddingLeft="@dimen/x30"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"/>
+</LinearLayout>

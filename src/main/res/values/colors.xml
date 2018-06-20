@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textcolor1">#ffffff</color>
+    <color name="textcolor2">#000000</color>
+    <color name="background1">#ffffff</color>
+    <color name="background2">#0e8c43</color>
+    <color name="background3">#f39801</color>
+    <color name="background4">#6b947c</color>
+    <color name="ccc">#33333333</color>
+    <color name="dark">#5e5656</color>
+    <color name="SpringGreen">#359f01</color>
+</resources>

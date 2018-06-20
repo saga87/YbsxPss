@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">校园食安</string>
+    <string name="hello"><u>phone:0123456</u></string>
+
+    <string name="update_download_finish">下载完成</string>
+    <string name="update_download_start">开始下载</string>
+    <string name="update_download_failed">下载失败</string>
+    <string name="update_download_progressing">正在下载</string>
+</resources>

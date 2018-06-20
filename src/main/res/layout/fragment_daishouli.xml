@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recycler_daishouli"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaaaaa"/>
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100">
+        <TextView
+            android:id="@+id/tv_dsl_jgdd"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="共选择了0个订单"
+            android:gravity="center|right"
+            android:paddingRight="@dimen/x20"
+            android:textSize="13sp"
+            android:textColor="#000000"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_dsl_plcldd"
+            android:layout_width="@dimen/y220"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:background="#0e8c43"
+            android:gravity="center"
+            android:text="批量受理订单"/>
+    </LinearLayout>
+</LinearLayout>

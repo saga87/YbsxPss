@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/textcolor1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="#359f01">
+        <ImageView
+            android:id="@+id/iv_goods_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="商品维护"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y20"
+        android:background="#ebeceb"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_goods"
+        android:paddingTop="@dimen/y10"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:layout_marginLeft="@dimen/x150"
+        android:layout_marginRight="@dimen/x150"
+        android:paddingBottom="@dimen/y10"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_goods_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/color_selector_shangjia"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="true"
+            android:drawablePadding="@dimen/y6"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="6dp"
+            android:text="上架"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#d5d5d5" />
+        <RadioButton
+            android:id="@+id/rb_goods_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/color_selector_shangjia"
+            android:button="@null"
+            android:drawablePadding="@dimen/y6"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="6dp"
+            android:text="下架"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+    </RadioGroup>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_sbwh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/tv_goods_fb"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="#359f01"
+        android:text="发布商品"
+        android:gravity="center"
+        android:textColor="#ffffff"/>
+</LinearLayout>

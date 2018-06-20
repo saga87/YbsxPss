@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v4.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/drawer_layout"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="#359f01">
+                <ImageView
+                    android:id="@+id/iv_dzd_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="对账单"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_filter"
+                    android:layout_width="wrap_content"
+                    android:text="筛选"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                    android:paddingLeft="@dimen/x20"
+                    android:paddingRight="@dimen/x20"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/recycler_dzd"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <!-- 抽屉内容 -->
+        <FrameLayout
+            android:fitsSystemWindows="true"
+            android:id="@+id/drawer_content"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y100"
+        android:background="#359f01">
+        <ImageView
+            android:id="@+id/iv_picking_list_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:paddingLeft="@dimen/x20"
+            android:paddingRight="@dimen/x20"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="备货单"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="@dimen/x60"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listview_picking_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</LinearLayout>
